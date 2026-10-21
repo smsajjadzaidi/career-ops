@@ -71,7 +71,7 @@
     "archive": "node archive-posting.mjs",
     "prepare:application": "node prepare-application.mjs",
     "application:init": "node application-artifacts.mjs --init",
-    "build:dashboard": "node build-dashboard.mjs",
+    "build:dashboard": "node init && node build-dashboard.mjs",
     "serve:dashboard": "cd dashboard && go run .",
     "postinstall": "node -e \"process.exit(['','0','false'].includes((process.env.PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD||'').toLowerCase())?1:0)\" || npx playwright install chromium || npx playwright install chromium",
     "manifesto": "node manifesto.mjs"
@@ -93,7 +93,7 @@
     "grok",
     "ai-agent-skill"
   ],
-  "author": "Santiago Fernández de Valderrama <hi@santifer.io> (https://santifer.io)",
+  "author": "Santiago Fern\u00e1ndez de Valderrama <hi@santifer.io> (https://santifer.io)",
   "homepage": "https://career-ops.org",
   "repository": {
     "type": "git",
