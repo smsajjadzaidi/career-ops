@@ -282,4 +282,4 @@ data/interview-prep/
 .next/
 web/.next/
 web/out/
-config.bat
+.env
